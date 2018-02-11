@@ -1,0 +1,26 @@
+{
+  "name": "iBeacon",
+  "version": "1.0.2",
+  "slug": "ibeacon",
+  "description": "Turn your Home Assistant into an iBeacon",
+  "url": "https://github.com/pstreule/homeassistant-addon-ibeacon",
+  "startup": "once",  
+  "boot": "auto",
+  "host_network": "true",
+  "privileged": ["NET_ADMIN"],
+  "options": {
+    "uuid": null,
+    "major": 0,
+    "minor": 0,
+    "advertisementInterval": 100,
+    "measuredPower": -60
+  },
+  "schema": {
+    "uuid": "match(^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[34][0-9a-fA-F]{3}-[89ab][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$)?",
+    "major": "int(0,65535)?",
+    "minor": "int(0,65535)?",
+    "advertisementInterval": "int(20,10000)?",
+    "measuredPower": "int?"
+  },
+  "image": "pstreule/{arch}-hassio-addon-ibeacon"
+}
