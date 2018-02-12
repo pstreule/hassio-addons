@@ -9,7 +9,7 @@
 
 Turn Home Assistant into an iBeacon for better presence detection.
 
-## Prequisites
+## Prerequisites
 
 This add-on requires a working Bluetooth setup. On the Raspberry Pi 3, install the [Bluetooth BCM43xx](https://home-assistant.io/addons/bluetooth_bcm43xx/) add-on first. 
 
@@ -32,7 +32,7 @@ You can check if your Home Assistant is acting as an iBeacon by using a tool lik
 
 ## Advanced Configuration
 
-Note: When you change the Presence UUID or other parameters you need to start the add-on again.
+**Note**: When you change the Presence UUID or other parameters you need to start the add-on again.
 
 The presence `uuid` as well as the `major` and `minor` versions allow you to configure the beacon for specific presence detection scenarios (see [Apple's Getting Started Guide](https://developer.apple.com/ibeacon/Getting-Started-with-iBeacon.pdf) for more background).
 
