@@ -17,7 +17,7 @@ MPOWER=$(jq --raw-output ".measuredPower // ${DEFAULT_MPOWER}" $CONFIG_PATH)
 
 # Store generated UUID if not set
 if [ -z "${UUID}" ]; then
-  UUID=${DEFAULT_UUID}
+  UUID=${DEFAULT_UUID^^}
   NEW_CONF=$(jq --arg uuid ${UUID} '. + {uuid: $uuid}' $CONFIG_PATH)
   echo "No UUID found, updating config with a generated UUID"
   echo $NEW_CONF
@@ -78,3 +78,5 @@ echo ${START_ADVERTISING}
 echo "Set iBeacon advertisement data:"
 echo ${SET_ADVERTISEMENT_DATA}
 [ -z $DRY_RUN ] && ${SET_ADVERTISEMENT_DATA}
+
+echo "iBeacon mode enabled. Presence UUID: ${UUID^^}"
