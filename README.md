@@ -17,7 +17,7 @@ https://github.com/pstreule/hassio-addons
 ![Supports i386 Architecture][ibeacon-i386-shield]
 ![Docker Pulls][ibeacon-pulls-shield]
 
-Turn Home Assistant into an iBeacon for better presence detection. This add-on also requires the [Bluetooth BCM43xx](https://home-assistant.io/addons/bluetooth_bcm43xx/) on the Raspberry Pi 3.
+Turn Home Assistant into an iBeacon for better presence detection. This add-on also requires [Bluetooth BCM43xx](https://home-assistant.io/addons/bluetooth_bcm43xx/) to be installed on the Raspberry Pi 3.
 
 
 [ibeacon-version-shield]: https://images.microbadger.com/badges/version/pstreule/armhf-hassio-addon-ibeacon.svg

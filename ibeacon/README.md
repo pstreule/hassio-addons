@@ -17,7 +17,7 @@ The Raspberry Pi 3 is currently the only tested platform, but images are provide
 
 ## Quickstart
 
-If you start this add-on without changing the configuration, a random presence UUID will be generated and printed to the logs.
+If you start this add-on without changing the configuration, a random presence UUID will be generated and logged.
 
 The other default settings are:
 
@@ -28,17 +28,17 @@ The other default settings are:
 
 You can check if your Home Assistant is acting as an iBeacon by using a tool like [BeaconScanner](https://github.com/mlwelles/BeaconScanner).
 
-*Note*: You need to copy the generated UUID to the configuration and save it, otherwise a new UUID will be generated the next time you start the add-on.
+**Note**: You need to copy the generated UUID to the configuration and save it, otherwise a new UUID will be generated the next time you start the add-on.
 
 ## Advanced Configuration
 
-You can change the Presence UUID and other parameters at any time and start the add-on again. 
+Note: When you change the Presence UUID or other parameters you need to start the add-on again.
 
-The presence `uuid`, `major` and `minor` versions allow you to configure the beacon for a specific presence detection scenario (see [Apple's Getting Started Guide](https://developer.apple.com/ibeacon/Getting-Started-with-iBeacon.pdf) for more background).
+The presence `uuid` as well as the `major` and `minor` versions allow you to configure the beacon for specific presence detection scenarios (see [Apple's Getting Started Guide](https://developer.apple.com/ibeacon/Getting-Started-with-iBeacon.pdf) for more background).
 
 The `advertisementInterval` specifies how often the advertisement is being broadcast. By default this is every 100ms as specified by Apple, but you can configure this value anywhere between 20ms and 10s.
 
-The `measuredPower` attribute specifies the Received Signal Strength Indicator (RSSI). Its value determines how accurate distance calculation will be. The value depends on the chipset and is set to `-60`, which works for the Raspberry Pi 3's BCM43xx chipset. See the *Calibration* section below for more details.
+The `measuredPower` attribute specifies the Received Signal Strength Indicator (RSSI). Its value determines how accurate distance calculation will be. The value depends on the chipset and is set to `-60`, which works for the Raspberry Pi 3's BCM43xx chipset. See the **Calibration** section below for more details.
 
 Allowed value ranges are:
 
