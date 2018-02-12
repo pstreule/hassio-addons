@@ -28,6 +28,8 @@ The other default settings are:
 
 You can check if your Home Assistant is acting as an iBeacon by using a tool like [BeaconScanner](https://github.com/mlwelles/BeaconScanner).
 
+*Note*: You need to copy the generated UUID to the configuration and save it, otherwise a new UUID will be generated the next time you start the add-on.
+
 ## Advanced Configuration
 
 You can change the Presence UUID and other parameters at any time and start the add-on again. 
