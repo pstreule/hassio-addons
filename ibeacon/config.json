@@ -3,6 +3,7 @@
   "version": "1.2",
   "slug": "ibeacon",
   "description": "Turn your Home Assistant into an iBeacon",
+  "arch": ["armhf"],
   "url": "https://github.com/pstreule/hassio-addons/tree/master/ibeacon",
   "startup": "once",  
   "boot": "auto",
